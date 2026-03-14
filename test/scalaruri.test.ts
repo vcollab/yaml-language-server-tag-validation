@@ -5,9 +5,8 @@
  *  URI-like strings (tag+include://file.yaml) during validation, enabling JSON
  *  Schemas to enforce that custom tags are present via pattern matching.
  *--------------------------------------------------------------------------------------------*/
-import { setupLanguageService, setupTextDocument, SCHEMA_ID, setupSchemaIDTextDocument, TestCustomSchemaProvider } from './utils/testHelper';
+import { setupLanguageService, SCHEMA_ID, setupSchemaIDTextDocument, TestCustomSchemaProvider } from './utils/testHelper';
 import { ServiceSetup } from './utils/serviceSetup';
-import { createExpectedError } from './utils/verifyError';
 import * as assert from 'assert';
 import { Diagnostic } from 'vscode-languageserver-types';
 import { LanguageService } from '../src/languageservice/yamlLanguageService';
