@@ -95,7 +95,10 @@ export class ValidationHandler {
       );
 
       return this.languageService
-        .doValidation(transformedDocument, isKubernetesAssociatedDocument(transformedDocument, this.yamlSettings.specificValidatorPaths))
+        .doValidation(
+          transformedDocument,
+          isKubernetesAssociatedDocument(transformedDocument, this.yamlSettings.specificValidatorPaths)
+        )
         .then((diagnosticResults) => {
           const diagnostics: Diagnostic[] = [];
           for (const diagnosticItem of diagnosticResults) {
