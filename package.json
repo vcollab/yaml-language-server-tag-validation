@@ -1,6 +1,6 @@
 {
-  "name": "yaml-language-server",
-  "description": "YAML language server",
+  "name": "@vcollab/yaml-language-server-tag-validation",
+  "description": "YAML language server with scalaruri custom tag validation (fork of yaml-language-server)",
   "version": "1.22.0",
   "author": "Red Hat",
   "license": "MIT",
